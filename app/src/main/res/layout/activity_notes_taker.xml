@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow"
+    android:layout_height="match_parent"
+    tools:context=".NotesTakerActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageview_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_save" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TITLE :-"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
+
+    <EditText
+        android:id="@+id/editText_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Title"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/editText_notes"
+        android:hint="ENTER NOTES"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
